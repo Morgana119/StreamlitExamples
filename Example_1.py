@@ -10,7 +10,7 @@ st.markdown('The data shown below belongs to incident reports in the city of San
 
 mapa = pd.DataFrame()
 mapa ['Date'] = df['Incident Date']
-mapa ['Day'] = df['Incident Day of week']
+mapa ['Day'] = df['Incident Day of Week']
 mapa ['Police District'] = df['Police District']
 mapa ['Date'] = df['Incident Date']
 mapa ['Neighborhood'] = df['Analysis Neighborhood']
