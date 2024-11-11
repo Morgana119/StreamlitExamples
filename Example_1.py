@@ -21,3 +21,4 @@ mapa ['lat'] = df['Latitude']
 mapa ['lon'] = df['Longitude']
 mapa = mapa.dropna()
 
+subset_data2 = mapa
