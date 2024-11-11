@@ -1,12 +1,16 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+#import plotly as px
+#import plotly.figure_factory as ff
+#from bokeh.plotting import figure
+#import matplotlib.pyplot as plt
 
 st.title('Police Incident Reports from 2018 to 2020 in San Francisco')
 
 df = pd.read_csv("Policev1.csv")
-df
 
-st.markdown('The data shown below belongs to incident reports in the city of San Francisco, from the reat 2018 to 2020.')
+st.markdown('The data shown below belongs to incident reports in the city of San Francisco, from the year 2018 to 2020, with details from each case such as date, day of the week, police district, neighborhood in which it happened, type of incident in category and subcategory, exact location and resolution.')
 
 mapa = pd.DataFrame()
 mapa['Date'] = df['Incident Date']
@@ -60,3 +64,7 @@ if agree:
 
 
 st.markdown('Resolution status')
+#fig1, ax1 = plt.subplots()
+#labels = subset_data['Resolution'].unique()
+#ax1.pie(subset_data['Resolution'].value_counts(), labels=labels, autopct='%1.1f%%', startangle=20)
+#st.pyplot(fig1)
